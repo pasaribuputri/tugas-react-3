@@ -2,8 +2,11 @@ import React from 'react'
 import "./Product.css"
 
 export const CardProduct = (props) => {
+    function HanClick(){
+        alert(`Produk ${props.nama} dengan harga ${props.harga} merupakan produk dengan kualitas terbaik`)
+    }
   return (
-    <div className='card' style={{
+    <div onClick={HanClick} className='card' style={{
         width: 240,
         height: 250,
         backgroundColor: "pink",
